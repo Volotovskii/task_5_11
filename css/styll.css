@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    background: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTB8NDY2Njg1NXx8ZW58MHx8fHx8') bottom no-repeat;
+    background-size: cover; 
+    background-attachment: scroll;
+}
+
+h1{
+    font-size: 3rem;
+    color:rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links{
+    margin-bottom: 50px;
+}
+
+footer .links > a{
+    color:black;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright{
+    color: rgb(108, 117, 125);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.news {
+    background-color: floralwhite;
+    padding: 50px 0 32px;
+}
+
+article{
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+article a{
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+article a:hover{
+    color: #0085a1;
+}
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+.article-meta{
+    color: rgb(134, 142, 150);
+    margin-bottom: 5px;
+}
+article img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+article{
+
+    border-radius: 2px;
+    box-shadow: 3px 0px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    overflow: hidden;
+    
+}
+/* Используя селектор псевдоэлемента  */
+article:nth-child(1) h2::before,
+article:nth-of-type(2) h2::before {
+  content: "New: ";
+  font-weight: bold;
+  color: #f00;
+}
+/* Используя селектор псевдокласса */
+article:nth-of-type(2n) {
+    background-color:rgba(233, 227, 227, 0.87);
+  }
+#carousel-item active .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+
+  
+  
+
+
+
+
+
